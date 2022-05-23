@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    grid-template-areas: 
+      "header header"
+      "main main"
+      "footer footer"; 
+}
+
+
+/*-------HEADER-NAV--------*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EB5353;
+    grid-area: header;
+
+
+}
+
+.header img {
+    width: 250px;
+    height: 150px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header nav ul li {
+    margin: 20px;
+  
+
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: bisque;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px rgb(185, 37, 37);
+
+}
+
+.header nav ul li a:hover {
+    color: #36AE7C;
+    text-shadow: 0;
+    transition: 1s;
+}
+
+
+/*----------MAIN-----------*/
+.main {
+    grid-area: main;
+
+}
+
+
+
+.section1 div {
+    display: flex;
+    align-items: center;
+    background-color: #F9D923;
+
+
+}
+
+.section1 div img {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+
+}
+
+.section1 div .tituloParrafo {
+    margin: 30px;
+}
+.section1 div .parrafo-1main{
+    text-align: center;
+}
+
+.section2 div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #36ae7c;
+}
+
+.section2 div img {
+    width: 600px;
+    height: 400px;
+    margin: 20px;
+
+
+}
+
+.section2 div .tituloParrafo2 {
+    margin: 10px;
+}
+
+.section2 div .parrafo-2main{
+    margin: 10px;
+    text-align: center;
+}
+/*--------MAIN--OBRAS-------*/
+.main-obras{
+    grid-area: main;
+
+    background-color: #F9D923;
+
+
+}
+
+
+
+/*----------FOOTER-----------*/
+
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #187498;
+    padding: 20px;
+    grid-area: footer;
+
+
+
+}
+
+.footer img {
+    width: 250px;
+    height: 150px;
+}
+
+.footer div img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*--------MQ--------*/
+/* mobile first */
+/* desktop first */
+
+@media screen and (max-width:1257px) {
+    .section1 div .parrafo-1main{
+        width: 70%;
+        text-align: center;
+    } 
+    .section2 div .parrafo-2main{
+        width: 70%;
+        text-align: center;
+    }
+    .section1 div img {
+        width: 550px;
+        height: 350px;
+        margin: 10px;
+    }
+    .section2 div img {
+        width: 550px;
+        height: 350px;
+        margin: 10px;            
+    }
+}
+@media screen and (max-width:1128px) {
+    .section1 div img {
+        width: 500px;
+        height: 300px;
+        margin: 7px;
+    }
+    .section2 div img {
+        width: 500px;
+        height: 300px;
+        margin: 7px; 
+    }      
+}
+@media screen and (max-width:1000px) {
+    .section1 div img {
+        width: 500px;
+        height: 275px;
+        margin: 7px;
+    }
+    .section1 div .typ{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    .section2 div .typ2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .section1 div{
+        flex-direction: column;
+    }
+    .section1 div img{
+        margin-top: 25px;
+    }
+    .section1 div div .parrafo-1main{
+        margin-bottom: 25px;
+    }
+    .section2 div{
+        flex-direction: column;
+    }
+    .section2 div img{
+        margin-top: 25px;
+    }
+    .section2 div div .parrafo-2main{
+        margin-bottom: 25px;
+    }
+
+}
+@media screen and (max-width:542px){
+    .section1 div img {
+        width: 400px;
+        height: 200px;
+    }
+    .section2 div img {
+        width: 400px;
+        height: 200px;     
+}
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer div{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:480px){
+    .header {
+      
+    }
+    .header nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header nav ul li {
+        margin: 0.1px;
+      
+    
+}
+}
+@media screen and (max-width:440px){
+    .section1 div img {
+        width: 300px;
+        height: 150px;
+    }
+    .section2 div img {
+        width: 300px;
+        height: 150px;
+
+}  
+}
