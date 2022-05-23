@@ -131,10 +131,21 @@
     grid-area: main;
 
     background-color: #F9D923;
-
-
+}
+/*--------MAIN--TALLERES-------*/
+.main .videos-talleres{
+    background-color: #F9D923;
 }
 
+
+
+/*--------MAIN--CONTACTO-------*/
+.main section .formulario{
+
+
+
+    background-color: #F9D923;
+}
 
 
 /*----------FOOTER-----------*/
