@@ -1,0 +1,35 @@
+@import "../base/variable"
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header;
+    grid-area: header;
+    img{
+        width: 250px;
+        height: 150px;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            li {        
+                margin: 20px;
+                a {
+                    text-decoration: none;
+                    color: bisque;
+                    font-weight: bold;
+                    text-shadow: 0.5px 0.5px 0.5px rgb(185, 37, 37);
+                    &:hover {
+                        color: #36AE7C;
+                        text-shadow: 0;
+                        transition: 1s;
+                    }
+                }
+            }
+              
+        }
+    }
+  
+
+}

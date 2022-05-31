@@ -1,0 +1,23 @@
+@import "../base/variable"
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #187498;
+    padding: 20px;
+    grid-area: footer;
+    img {
+        width: 250px;
+        height: 150px;
+        & div {
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+
+
+}
