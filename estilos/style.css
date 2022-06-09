@@ -29,38 +29,10 @@
 
 
 }
-
 .header img {
     width: 250px;
     height: 150px;
 }
-
-.header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-.header nav ul li {
-    margin: 20px;
-  
-
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    color: bisque;
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px 0.5px rgb(185, 37, 37);
-
-}
-
-.header nav ul li a:hover {
-    color: #36AE7C;
-    text-shadow: 0;
-    transition: 1s;
-}
-
-
 /*----------MAIN-----------*/
 .main {
     grid-area: main;
@@ -130,13 +102,32 @@
 .main-obras{
     grid-area: main;
 
-    background-color: #F9D923;
+    background-color: #F9D923;    
 }
+
 /*--------MAIN--TALLERES-------*/
 .main .videos-talleres{
     background-color: #F9D923;
 }
 
+/*--------MAIN--BIO-------*/
+.main .seccionbio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9D923;
+    font-size: medium;
+    justify-content: space-between;
+    grid-area: main; 
+
+
+}
+.main .seccionbio .bioparrafos{
+    text-align: center;
+    margin: 30px;
+
+
+}
 
 
 /*--------MAIN--CONTACTO-------*/
@@ -276,9 +267,7 @@
     }
 }
 @media screen and (max-width:480px){
-    .header {
-      
-    }
+  
     .header nav ul{
         flex-direction: column;
         justify-content: center;

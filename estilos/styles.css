@@ -1,1 +1,70 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EB5353;
+  grid-area: header;
+}
+.header img {
+  width: 250px;
+  height: 150px;
+}
+
+
+.main {
+  grid-area: main;
+}
+.main .section1 div {
+  display: flex;
+  align-items: center;
+  background-color: #F9D923;
+}
+.main .section1 div img {
+  width: 600px;
+  height: 400px;
+  margin: 20px;
+}
+.main .section1 div img .tituloParrafo {
+  margin: 30px;
+}
+.main .section1 div img .tituloParrafo:hover {
+  color: #36AE7C;
+  text-shadow: 0;
+  transition: 3s;
+}
+.main .section1 div .section2 div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: #36AE7C;
+}
+.main .section1 div .section2 div img {
+  width: 600px;
+  height: 400px;
+  margin: 20px;
+}
+.main .section1 div .section2 div img .tituloparrafo2 {
+  margin: 10px;
+}
+.main .section1 div .section2 div img .tituloparrafo2:hover {
+  color: #EB5353;
+  text-shadow: 0;
+  transition: 3s;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #187498;
+  padding: 20px;
+  grid-area: footer;
+}
+.footer img {
+  width: 250px;
+  height: 150px;
+}
+.footer img div img {
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=styles.css.map */
